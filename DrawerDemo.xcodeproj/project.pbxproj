@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D9D77638225C64B20056E01C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77637225C64B20056E01C /* AppDelegate.swift */; };
-		D9D7763A225C64B20056E01C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77639225C64B20056E01C /* ViewController.swift */; };
+		D9D7763A225C64B20056E01C /* MyContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77639225C64B20056E01C /* MyContainerViewController.swift */; };
 		D9D7763D225C64B20056E01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D7763B225C64B20056E01C /* Main.storyboard */; };
 		D9D7763F225C64B30056E01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D7763E225C64B30056E01C /* Assets.xcassets */; };
 		D9D77642225C64B40056E01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D77640225C64B30056E01C /* LaunchScreen.storyboard */; };
+		D9D7764A225C655F0056E01C /* DrawerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77649225C655F0056E01C /* DrawerContainerViewController.swift */; };
+		D9D77652225C68320056E01C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77651225C68320056E01C /* MainViewController.swift */; };
+		D9D77654225C683D0056E01C /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D77653225C683D0056E01C /* DrawerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9D77634225C64B20056E01C /* DrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D77637225C64B20056E01C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9D77639225C64B20056E01C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9D77639225C64B20056E01C /* MyContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContainerViewController.swift; sourceTree = "<group>"; };
 		D9D7763C225C64B20056E01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9D7763E225C64B30056E01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D77641225C64B40056E01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9D77643225C64B40056E01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D77649225C655F0056E01C /* DrawerContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerContainerViewController.swift; sourceTree = "<group>"; };
+		D9D77651225C68320056E01C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D9D77653225C683D0056E01C /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		D9D77636225C64B20056E01C /* DrawerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D9D7764F225C67D80056E01C /* DrawerContainer */,
+				D9D77650225C67ED0056E01C /* CustomViewControllers */,
 				D9D77637225C64B20056E01C /* AppDelegate.swift */,
-				D9D77639225C64B20056E01C /* ViewController.swift */,
 				D9D7763B225C64B20056E01C /* Main.storyboard */,
 				D9D7763E225C64B30056E01C /* Assets.xcassets */,
 				D9D77640225C64B30056E01C /* LaunchScreen.storyboard */,
 				D9D77643225C64B40056E01C /* Info.plist */,
 			);
 			path = DrawerDemo;
+			sourceTree = "<group>";
+		};
+		D9D7764F225C67D80056E01C /* DrawerContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D9D77649225C655F0056E01C /* DrawerContainerViewController.swift */,
+			);
+			path = DrawerContainer;
+			sourceTree = "<group>";
+		};
+		D9D77650225C67ED0056E01C /* CustomViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9D77639225C64B20056E01C /* MyContainerViewController.swift */,
+				D9D77651225C68320056E01C /* MainViewController.swift */,
+				D9D77653225C683D0056E01C /* DrawerViewController.swift */,
+			);
+			path = CustomViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D7763A225C64B20056E01C /* ViewController.swift in Sources */,
+				D9D7763A225C64B20056E01C /* MyContainerViewController.swift in Sources */,
 				D9D77638225C64B20056E01C /* AppDelegate.swift in Sources */,
+				D9D77654225C683D0056E01C /* DrawerViewController.swift in Sources */,
+				D9D7764A225C655F0056E01C /* DrawerContainerViewController.swift in Sources */,
+				D9D77652225C68320056E01C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
